@@ -18,9 +18,11 @@ public class StateSemaforo extends Semaforo {
         
         Semaforo s = new Semaforo();
         s.setVisible(true);
+        opp.setVisible(false);
         EstadoAmarillo a = new EstadoAmarillo();
         EstadoRojo r = new  EstadoRojo();
         EstadoVerde v = new EstadoVerde();
+        amarillo.setVisible(false);
         
         while(true){
             v.mostrar();
