@@ -4,26 +4,25 @@
  * and open the template in the editor.
  */
 package state.semaforo;
-
-import javax.accessibility.AccessibleContext;
-
 /**
  *
  * @author Joaquin
  */
 public class EstadoVerde extends Semaforo implements EstadoSemaforo{
 
-     public void setAccessibleContext(AccessibleContext accessibleContext) {
-        this.accessibleContext = accessibleContext;
-        Semaforo s = new Semaforo();
-        s.verde.setVisible(true);
-        s.amarillo.setVisible(false);
-        s.rojo.setVisible(false);
-    }
+    long espera = 4000;
      
     @Override
     public void mostrar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            verde.setVisible(true);
+            amarillo.setVisible(false);
+            rojo.setVisible(false);
+            Thread.sleep(espera);
+            System.out.println("Verde");
+            
+        } catch (Exception e) {
+        }
     }
     
     
