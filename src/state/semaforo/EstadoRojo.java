@@ -5,14 +5,22 @@
  */
 package state.semaforo;
 
+import javax.accessibility.AccessibleContext;
+
 /**
  *
  * @author Joaquin
  */
-public class EstadoRojo extends javax.swing.JFrame implements EstadoSemaforo{
+public class EstadoRojo extends Semaforo implements EstadoSemaforo{
     
     Semaforo s = new Semaforo();
-    s.amarillo.setVisible(false);
+    
+    //s.setVisible(false);
+
+    public void setAccessibleContext(AccessibleContext accessibleContext) {
+        this.accessibleContext = accessibleContext;
+    }
+    
     
     @Override
     public void mostrar() {

@@ -37,14 +37,14 @@ public class Semaforo extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        rojo.setText("jLabel2");
-        jPanel1.add(rojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, -1, -1));
+        rojo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\rojo.png")); // NOI18N
+        jPanel1.add(rojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
 
-        amarillo.setText("jLabel1");
-        jPanel1.add(amarillo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, -1, -1));
+        amarillo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\amarillo.png")); // NOI18N
+        jPanel1.add(amarillo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
 
-        verde.setText("jLabel1");
-        jPanel1.add(verde, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, -1, -1));
+        verde.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\verde.png")); // NOI18N
+        jPanel1.add(verde, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
 
         semaforo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\semaforo.png")); // NOI18N
         jPanel1.add(semaforo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
@@ -53,11 +53,11 @@ public class Semaforo extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 592, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 567, Short.MAX_VALUE)
         );
 
         pack();
@@ -99,10 +99,10 @@ public class Semaforo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel amarillo;
-    private javax.swing.JPanel jPanel1;
-    public javax.swing.JLabel rojo;
+    public static javax.swing.JLabel amarillo;
+    public javax.swing.JPanel jPanel1;
+    public static javax.swing.JLabel rojo;
     public javax.swing.JLabel semaforo;
-    public javax.swing.JLabel verde;
+    public static javax.swing.JLabel verde;
     // End of variables declaration//GEN-END:variables
 }
