@@ -4,15 +4,16 @@
  * and open the template in the editor.
  */
 package state.semaforo;
-
 /**
  *
  * @author Joaquin
  */
 public class EstadoRojo extends Semaforo implements EstadoSemaforo{
 
+    //Variable de retardo
     long espera = 4000;
     
+    //Metodo que cambia la visibilidad de los Label y aplica el retardo
     @Override
     public void mostrar() {
         try {

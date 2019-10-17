@@ -28,30 +28,30 @@ public class Semaforo extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        opp = new javax.swing.JLabel();
-        amarillo = new javax.swing.JLabel();
         rojo = new javax.swing.JLabel();
+        amarillo = new javax.swing.JLabel();
         verde = new javax.swing.JLabel();
         semaforo = new javax.swing.JLabel();
+        opp = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        opp.setText("jLabel1");
-        jPanel1.add(opp, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, -1, -1));
+        rojo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\rojo.png")); // NOI18N
+        jPanel1.add(rojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
 
         amarillo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\amarillo.png")); // NOI18N
         jPanel1.add(amarillo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
-
-        rojo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\rojo.png")); // NOI18N
-        jPanel1.add(rojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
 
         verde.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\verde.png")); // NOI18N
         jPanel1.add(verde, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
 
         semaforo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\semaforo.png")); // NOI18N
         jPanel1.add(semaforo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, -1, -1));
+
+        opp.setIcon(new javax.swing.ImageIcon("C:\\Users\\Joaquin\\Downloads\\thanos.gif")); // NOI18N
+        jPanel1.add(opp, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,7 +106,7 @@ public class Semaforo extends javax.swing.JFrame {
     public static javax.swing.JLabel amarillo;
     public javax.swing.JPanel jPanel1;
     public static javax.swing.JLabel opp;
-    public javax.swing.JLabel rojo;
+    public static javax.swing.JLabel rojo;
     public javax.swing.JLabel semaforo;
     public static javax.swing.JLabel verde;
     // End of variables declaration//GEN-END:variables

@@ -8,6 +8,8 @@ package state.semaforo;
 /**
  *
  * @author Joaquin
+ * 
+ * Interfaz que generaliza el metodo mostrar
  */
 public interface EstadoSemaforo {
     

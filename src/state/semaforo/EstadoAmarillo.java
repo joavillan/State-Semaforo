@@ -10,8 +10,10 @@ package state.semaforo;
  */
 public class EstadoAmarillo extends Semaforo implements EstadoSemaforo{
 
+    //Variable de retardo
     long espera = 2000;
      
+    //Metodo que cambia la visibilidad de los Label y aplica el retardo
     @Override
     public void mostrar() {
         try {
