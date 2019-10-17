@@ -5,12 +5,22 @@
  */
 package state.semaforo;
 
+import javax.accessibility.AccessibleContext;
+
 /**
  *
  * @author Joaquin
  */
 public class EstadoAmarillo extends Semaforo implements EstadoSemaforo{
 
+     public void setAccessibleContext(AccessibleContext accessibleContext) {
+        this.accessibleContext = accessibleContext;
+        Semaforo s = new Semaforo();
+        s.verde.setVisible(false);
+        s.amarillo.setVisible(true);
+        s.rojo.setVisible(false);
+    }
+     
     @Override
     public void mostrar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

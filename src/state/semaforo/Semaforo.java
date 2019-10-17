@@ -99,10 +99,10 @@ public class Semaforo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JLabel amarillo;
+    public javax.swing.JLabel amarillo;
     public javax.swing.JPanel jPanel1;
-    public static javax.swing.JLabel rojo;
+    public javax.swing.JLabel rojo;
     public javax.swing.JLabel semaforo;
-    public static javax.swing.JLabel verde;
+    public javax.swing.JLabel verde;
     // End of variables declaration//GEN-END:variables
 }
